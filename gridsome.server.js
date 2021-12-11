@@ -9,9 +9,7 @@ module.exports = function (api) {
   api.chainWebpack((config, { isServer }) => {
     if (isServer) {
       config.externals([
-        nodeExternals({
-          allowlist: [/^vuetify/]
-        })
+        
       ])
     }
   })

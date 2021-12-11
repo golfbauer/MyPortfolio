@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio-App",
+  "name": "portfolioapp",
   "private": true,
   "scripts": {
     "build": "gridsome build",
