@@ -2,9 +2,6 @@
   <v-app>
     <v-navigation-drawer width="240px" permanent fixed>
       <v-list-item>
-        <!-- <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
-        </v-list-item-avatar> -->
         <v-list-item-content>
           <v-list-item-title class="text-h6"> Henri Truetsch </v-list-item-title>
           <v-list-item-subtitle> Software Engineer </v-list-item-subtitle>
@@ -14,7 +11,12 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item 
+        v-for="item in items" 
+        :key="item.title" 
+        link
+        :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -56,8 +58,12 @@ query {
 </static-query>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .v-application--wrap {
   flex-direction: row;
+  
 }
 
 .v-main {
