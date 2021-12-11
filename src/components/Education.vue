@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <h1>Education</h1>
+          <h1 style="font-size: 30px;">Education & Experience</h1>
         </v-col>
       </v-row>
       <v-row>
@@ -25,13 +25,15 @@
                 <h2
                   :class="`headline font-weight-light mb-4 ${year.color}--text`"
                 >
-                  Lorem ipsum
+                  {{year.name}}
                 </h2>
                 <div>
-                  Lorem ipsum dolor sit amet, no nam oblique veritus. Commune
-                  scaevola imperdiet nec ut, sed euismod convenire principes at.
-                  Est et nobis iisque percipit, an vim zril disputando
-                  voluptatibus, vix an salutandi sententiae.
+                  <p>{{year.study}}</p>
+                  <p>{{year.major}}</p>
+                  <p>{{year.semester}}</p>
+                  <blockquote>
+                  <p>{{year.work}}</p>
+                  </blockquote>
                 </div>
               </div>
             </v-timeline-item>
@@ -48,25 +50,38 @@ export default {
       years: [
         {
           color: 'cyan',
-          year: '1960',
+          year: '09/2021 - 01/2022',
+          name: 'Dundalk Institute of Technology',
+          study: 'Computing in Games Development',
+          semester: 'Erasmus Semester',
+          work: 'Relevant coursework: 2D and 3D Character Animation, 2D Game Engine Development, Games Physics, Software Testing, Database Systems 2'
         },
         {
           color: 'green',
-          year: '1970',
+          year: '09/2019 - 08/2023',
+          name: 'Heilbronn University of Applied Sciences',
+          study: 'Software Engineering',
+          major: 'Major field of study Games Development',
+          semester: 'Semester 5',
+          work: 'Relevant coursework: Web Development, Software Engineering of Complex Systems, DevOps, Complex Programs, Software Project & Skills Lab'
         },
         {
           color: 'pink',
-          year: '1980',
+          year: '2018/09 - 2019/03',
+          name: 'Bundeswehr',
+          study: 'Wehrdienst [Voluntary Military Service]',
+          major: 'Obergefreiter [Corporal]',
+          semester: 'Grundausbildung [Basic Training] in Schwarzenborn',
+          work: 'Prepared soldiers and civilian employees of various organizations for foreign missions as an auxiliary instructor in Hammelburg.'
         },
         {
           color: 'amber',
-          year: '1990',
-        },
-        {
-          color: 'orange',
-          year: '2000',
-        },
+          year: '08/2010 - 06/2018',
+          name: 'Eltville Gymnasium',
+          study: 'Abitur [Highschool]',
+        }
       ],
     }),
   }
 </script>
+
