@@ -5,7 +5,7 @@
           <v-col sm="6">
             <g-image alt="Example image" src="~/profile.jpg" width="400" />
           </v-col>
-          <v-col sm="6" class="d-flex flex-column justify-center">
+          <v-col sm="5" class="d-flex flex-column justify-center">
             <h1>Hi, I'm Henri.</h1>
             <div>
                 <p>I'm a Software Engineer who studies Games Development in Dundalk Institute of Technology.</p> 
@@ -18,3 +18,9 @@
       </v-container>
     </section>
 </template>
+
+<style scoped>
+.g-image{
+    border-radius: 70%;
+}
+</style>

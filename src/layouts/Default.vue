@@ -65,7 +65,6 @@ html {
   flex-direction: row;
   
 }
-
 .v-main {
   flex: 1 0;
   margin-left: 240px;
