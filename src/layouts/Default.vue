@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer width="240px" permanent>
+    <v-navigation-drawer width="240px" permanent fixed>
       <v-list-item>
         <!-- <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
@@ -26,9 +26,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-container>
         <slot />
-      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -40,7 +38,7 @@ export default {
       items: [
         { title: "About", icon: "mdi-account-box-outline" },
         { title: "Projects", icon: "mdi-apps" },
-        { title: "Education", icon: "mdi-school-outline" },
+        { title: "Education & Experience", icon: "mdi-school-outline" },
         { title: "Contact", icon: "mdi-message-text-outline" },
       ],
     };
@@ -64,5 +62,7 @@ query {
 
 .v-main {
   flex: 1 0;
+  margin-left: 240px;
 }
+
 </style>
