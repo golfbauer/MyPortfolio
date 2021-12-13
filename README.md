@@ -29,3 +29,4 @@ This is the project you get when you run `gridsome create new-project`.
 * (Make Sidebar go down)
 * (Add Button for Show off to projects)
 * (Clean up code)
+* Change the color palette and make a list uptop with multiple colors changing the website with each click
