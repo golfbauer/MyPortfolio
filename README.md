@@ -25,7 +25,7 @@ This is the project you get when you run `gridsome create new-project`.
 
 ### TODO
 
-* Make Profile Image rezisable
+* Make Profile Image resizable
 * (Make Sidebar go down)
-* Add Button for Show off to projects
+* (Add Button for Show off to projects)
 * (Clean up code)
