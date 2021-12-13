@@ -15,7 +15,10 @@ import Projects from "@/components/Projects.vue";
 
 export default {
   metaInfo: {
-    title: "Hello, world!",
+    title: "Henri Truetsch",
+    meta: [
+      { name: 'author', content: 'Henri Truetsch' }
+    ]
   },
   components: {
     About,

@@ -31,9 +31,10 @@
                   <p>{{year.study}}</p>
                   <p>{{year.major}}</p>
                   <p>{{year.semester}}</p>
-                  <blockquote>
-                  <p>{{year.work}}</p>
-                  </blockquote>
+                  <p>{{year.work[0]}}</p>
+                  <ul v-if="year.work[1]">
+                    <li v-for="value in year.work" :key="value"> {{value}} </li>
+                  </ul>
                 </div>
               </div>
             </v-timeline-item>
@@ -54,7 +55,7 @@ export default {
           name: 'Dundalk Institute of Technology',
           study: 'Computing in Games Development',
           semester: 'Erasmus Semester',
-          work: 'Relevant coursework: 2D and 3D Character Animation, 2D Game Engine Development, Games Physics, Software Testing, Database Systems 2'
+          work: ['Relevant coursework:', '2D and 3D Character Animation', '2D Game Engine Development', 'Games Physics', 'Software Testing', 'Database Systems 2']
         },
         {
           color: 'green',
@@ -63,25 +64,39 @@ export default {
           study: 'Software Engineering',
           major: 'Major field of study Games Development',
           semester: 'Semester 5',
-          work: 'Relevant coursework: Web Development, Software Engineering of Complex Systems, DevOps, Complex Programs, Software Project & Skills Lab'
+          work: ['Relevant coursework:', 'Web Development', 'Software Engineering of Complex Systems', 'DevOps', 'Complex Programs', 'Software Project & Skills Lab']
         },
         {
           color: 'pink',
-          year: '2018/09 - 2019/03',
+          year: '2018/12 - 2019/03',
           name: 'Bundeswehr',
           study: 'Wehrdienst [Voluntary Military Service]',
           major: 'Obergefreiter [Corporal]',
-          semester: 'Grundausbildung [Basic Training] in Schwarzenborn',
-          work: 'Prepared soldiers and civilian employees of various organizations for foreign missions as an auxiliary instructor in Hammelburg.'
+          work: ['Prepared soldiers and civilian employees of various organizations for foreign missions as an auxiliary instructor in Hammelburg.']
+        },
+        {
+          color: 'pink',
+          year: '2018/09 - 2018/11',
+          name: 'Bundeswehr',
+          study: 'Wehrdienst [Voluntary Military Service]',
+          major: 'Jaeger [Private]',
+          work: ['Grundausbildung [Basic Training] in Schwarzenborn']
         },
         {
           color: 'amber',
           year: '08/2010 - 06/2018',
           name: 'Eltville Gymnasium',
           study: 'Abitur [Highschool]',
+          work: []
         }
       ],
     }),
   }
 </script>
+
+<style scoped>
+::marker {
+  	margin-left: 20px;
+}
+</style>
 

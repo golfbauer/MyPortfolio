@@ -27,10 +27,10 @@
                     src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg"
                     >
                     </a>
-                    <a href=""> <!--TODO: get a fucking link for discord --> 
+                    <a href="https://stackoverflow.com/users/14836233/golfbauer"> 
                     <img 
                     class="contact-icon"
-                    src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/discord.svg"
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
                     >
                     </a>
                 </v-col>

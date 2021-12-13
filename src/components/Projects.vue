@@ -16,7 +16,7 @@
                 :class="{ 'on-hover': hover }"
                 class="d-flex flex-column"
                 max-width="360"
-                min-height="465"
+                min-height="500"
               >
                 <v-img class="align-end" height="200px" :src="project.image">
                 </v-img>
@@ -35,6 +35,11 @@
             </v-hover>
           </v-col>
         </template>
+      </v-row>
+      <v-row>
+        <v-col>
+          <h1 class="thereIsMore">If you want to see more of my projects, just hop on to my GitHub page.</h1>
+        </v-col>
       </v-row>
     </v-container>
   </section>
@@ -100,5 +105,9 @@ export default {
 }
 .v-image {
   border-bottom: 1px solid;
+}
+.thereIsMore {
+  text-align: center;
+  font-size: 20px;
 }
 </style>

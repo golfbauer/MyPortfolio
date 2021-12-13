@@ -26,11 +26,6 @@ This is the project you get when you run `gridsome create new-project`.
 ### TODO
 
 * Make Profile Image rezisable
-* Make Sidebar go down
+* (Make Sidebar go down)
 * Add Button for Show off to projects
-* Say below projects that there are more projects
-* Make relevant courses a list and stack them below
-* Add basic training as own timeline
-* Add Link to last button in contact
-* Give page a name
-* Clean up code
+* (Clean up code)

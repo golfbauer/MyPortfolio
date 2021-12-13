@@ -1,8 +1,9 @@
 <template>
   <v-app>
     <v-navigation-drawer
-      width="15%"
+      width="15%" 
       :permanent="$vuetify.breakpoint.smAndUp"
+      
     >
       <v-list-item>
         <v-list-item-content>
