@@ -1,9 +1,14 @@
 <template>
   <v-app>
-    <v-navigation-drawer width="240px" permanent fixed>
+    <v-navigation-drawer
+      width="15%"
+      :permanent="$vuetify.breakpoint.smAndUp"
+    >
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="text-h6"> Henri Truetsch </v-list-item-title>
+          <v-list-item-title class="text-h6">
+            Henri Truetsch
+          </v-list-item-title>
           <v-list-item-subtitle> Software Engineer </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -11,11 +16,11 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item 
-        v-for="item in items" 
-        :key="item.title" 
-        link
-        :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          link
+          :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -28,7 +33,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-        <slot />
+      <slot />
     </v-main>
   </v-app>
 </template>
@@ -63,11 +68,8 @@ html {
 }
 .v-application--wrap {
   flex-direction: row;
-  
 }
 .v-main {
   flex: 1 0;
-  margin-left: 240px;
 }
-
 </style>

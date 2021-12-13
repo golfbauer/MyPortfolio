@@ -16,14 +16,14 @@
                 :class="{ 'on-hover': hover }"
                 class="d-flex flex-column"
                 max-width="360"
-                min-height="420"
+                min-height="465"
               >
                 <v-img class="align-end" height="200px" :src="project.image">
                 </v-img>
                 <v-card-title>{{ project.name }}</v-card-title>
 
                 <v-card-text class="text--primary">
-                  {{ truncate(project.description) }}
+                  {{ project.description }}
                 </v-card-text>
                 <v-spacer></v-spacer>
                 <v-card-actions>
@@ -49,7 +49,8 @@ export default {
           name: "SH-Travel",
           github: "https://github.com/golfbauer/SH-Travel",
           description:
-            "In this project, 5 students and myself, worked in a scrum team to develop a responsive web application. I enjoyed the challenge, gained valuable experience, and was able to develop my skills particularly as a back-end developer.",
+            "In this project, 5 students and myself, worked in a scrum team to develop a responsive web application." +  
+            "I enjoyed the challenge, gained valuable experience, and was able to further develop my skills in Web Development.",
           image:
             "https://github.com/golfbauer/SH-Travel/blob/main/src/frontend/src/assets/images/Luebeck_Login.jpg?raw=true",
         },
@@ -58,7 +59,9 @@ export default {
           github:
             "https://github.com/golfbauer/FunctionAnalyzer/tree/main/components/src/main/java/de/hhn/it/pp/components/functionanalyzer",
           description:
-            "This program takes in a function and computes its maxima, minima, intersection with y, x and so on. Though this project is 1 1/2 years old I am still very proud of what I accomplished.",
+            "This beautifull program takes a function as a string and calculates its maxima, minima, intercepts with y and x, etc. " + 
+            "It is the result of a one-week work assignment in my third semester. " + 
+            "If you dare to look at our code, you can find it if you click on the button below.",
           image:
             "https://github.com/golfbauer/FunctionAnalyzer/blob/main/components/src/main/java/de/hhn/it/pp/components/functionanalyzer/FunctionAnalyzer.png?raw=true",
         },
@@ -66,7 +69,9 @@ export default {
           name: "Schnek",
           github: "https://github.com/golfbauer/Schnek",
           description:
-            "This project is part of a assignment for my 2D Game Engine Development module. I just started out with this project and it will be done until January.",
+            "This project is part of a continous assignment for my 2D Game Engine Development module. " + 
+            "I just started out with this project and hopefully it will be done by January. " + 
+            "The goal is to recreate Snake with some extra features.",
           image:
             "https://github.com/golfbauer/Schnek/blob/main/Games/Schnek/assets/images/SnakeByGoogle.png?raw=true",
         },
@@ -74,7 +79,8 @@ export default {
           name: "Portfolio",
           github: "https://github.com/golfbauer/MyPortfolio",
           description:
-            "Creating this Portfolio meant that it was my first time working with Gridsome and Vuetify. ",
+            "Even though you are already on this website I wanted to show that I did not just copy a portfolio from Github. " + 
+            "I also used Gridsome and Vuetify to create this Portfolio for the first time, to show my adaptibility.",
           image:
             "https://github.com/golfbauer/MyPortfolio/blob/master/src/profile.jpg?raw=true",
         },
@@ -82,13 +88,7 @@ export default {
     };
   },
   methods: {
-    truncate(str) {
-      //For to long Description in card
-      if (str.length > 150) {
-        return str.slice(0, 149) + " ...";
-      }
-      return str;
-    },
+  
   },
 };
 </script>

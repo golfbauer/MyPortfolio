@@ -2,25 +2,24 @@
   <section id="about">
     <v-container>
       <v-row class="justify-space-around">
-        <v-col sm="1">
-          <g-image alt="Example image" src="~/profile.jpg" width="400" />
+        <v-col>
+          <center><g-image alt="Profile image" src="~/profile.jpg"  /></center>
         </v-col>
-        <v-col sm="6" class="d-flex flex-column justify-center">
+        <v-col class="d-flex flex-column justify-center">
           <div class="introduction">
             <h1>Hi, I'm Henri.</h1>
             <blockquote>
               <p>
-                I'm a Software Engineer student with extensive skills in Java
+                I am a Software Engineer student with extensive skills in Java
                 and responsive Web Applications development.
               </p>
               <p>
-                Currently I am doing an Erasmus semester at the Dundalk
-                Institute of Technology in Ireland
+                I am currently doing an Erasmus semester at the Dundalk
+                Institute of Technology in Ireland.
               </p>
               <p>There I study Games Development as my major field of study.</p>
               <p>
-                Next Semester I will be doing an internship which I would like
-                to do abroad as well.
+                Next semester, I will be doing an internship, which I would like to do abroad as well.
               </p>
             </blockquote>
             <br />
@@ -41,6 +40,8 @@
 <style scoped>
 .g-image {
   border-radius: 50%;
+  max-width: 400px;
+
 }
 .introduction h1 {
   margin-bottom: 15px;
@@ -48,6 +49,5 @@
 }
 .introduction p {
   display: block;
-  line-height: 0.7;
 }
 </style>
